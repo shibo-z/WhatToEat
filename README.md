@@ -1,3 +1,5 @@
+# WhatToEat
+吃啥是个难题，让系统决定吧
 # electron-quick-start
 
 **Clone and run for a quick way to see Electron in action.**
