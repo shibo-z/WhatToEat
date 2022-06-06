@@ -1,43 +1,30 @@
-# WhatToEat
-吃啥是个难题，让系统决定吧
-# electron-quick-start
+# WhatToEat 吃点啥
+在公司天天不知道吃啥，写个程序来决定吧！
 
-**Clone and run for a quick way to see Electron in action.**
+这是一个桌面应用。
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start) within the Electron documentation.
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
+---
+## 构建
+```text
+# 安装依赖
 npm install
-# Run the app
-npm start
+# 编译前端页面； sencha ：ExtJs 的CMD工具
+sencha app build -testing
+# 打包
+npm make
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+## 技术选型
+```text
+桌面框架；Electron
+前端框架：ExtJs
+```
 
-## Resources for Learning Electron
-
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+## 目录说明
+```text
+main: 存放electron主进程js
+renderer: 存放渲染进程js
+resources: 存放electron的资源
+src: ExtJs源代码
+view: ExtJs编译输出目录，主进程加载此文件夹下的index.html
+```

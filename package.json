@@ -1,14 +1,14 @@
 {
   "name": "WhatToEat",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "用来解决在公司饭点不知道吃啥的难题。使用ExtJs和Electron实现。",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/shibo-z/WhatToEat",
   "keywords": [
     "Electron",
     "quick",
